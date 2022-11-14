@@ -6,14 +6,12 @@ import SmallTitle from "../../common/typografy/smallTitle"
 import Divider from "../../common/divider"
 import withLogin from "./withLogin"
 import withPropsStyles from "./withPropsStyles"
-import SimpleComponent from "./SimpleComponent"
-import withFunctions from "./withFunctions"
 
 const HOCExample = () => {
     const ComponentWithAuth = withLogin(Component)
     const ComponentWithPropsStyles = withPropsStyles(Component)
     const NewComponent = withPropsStyles(ComponentWithAuth)
-    const ComponentWithHoc = withFunctions(SimpleComponent)
+
     return (
         <>
             <CardWrapper>
@@ -36,7 +34,6 @@ const HOCExample = () => {
                 <Divider />
                 <NewComponent />
             </CardWrapper>
-            <ComponentWithHoc />
         </>
     )
 }

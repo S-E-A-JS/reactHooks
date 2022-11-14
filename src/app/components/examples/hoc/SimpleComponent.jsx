@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const SimpleComponent = ({ onLogin, onLogOut, isAuth }) => {
-    console.log("isAuth", isAuth)
     return (
         <>
             {isAuth ? (
